@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <style>
+
+        form{
+        font-size :20px;
+        padding:25px;
+        margin-left:380px;
+        margin-right:380px;
+        background-color:rgb(237,232,208);
+        border-radius:8px;
+        
+        }
+
+
+        form label{
+            display:inline-block;
+            padding-right:50px;
+            padding-bottom:25px;
+        }
+
+
+        form input{
+            display:inline-block;
+            height:25px;
+            font-size:13px;
+            
+        }
+
+        .bottom-gap{
+            padding-bottom:25px;
+        }
+
+        .template{
+            padding-right:92px;
+        }
+        .template1{
+            padding-right:58px;
+        
+        }
+        .template2{
+            padding-right:30px;
+        }
+        .template3{
+            padding-right:40px;
+        }
+        .template4{
+            padding-right:100px;
+        }
+        .template5{
+            padding-right:90px;
+        }
+        .template6{
+            padding-right:108px;
+        }
+        .template7{
+            padding-right:72px;
+        }
+        .template8{
+            position:relative;
+            top:7px;
+            right:18px;
+        }
+        .template9{
+            position:relative;
+            width:20px;
+            top:7px;
+        
+        }
+
+        .template10{
+            position:relative;
+            width:20px;
+            top:7px;
+            left:108px;
+        }
+        .template11{
+            position:relative;
+            width:20px;
+            top:7px;
+            left:120px;
+        }
+
+        .width-template{
+            width:230px;
+        }
+
+        .width-template2{
+            height:30px;
+            width:235px;
+        }
+        textarea{
+            display:inline-block;
+            margin-bottom:50px;
+        }
+        .submit{
+            display:inline-block;
+            margin-left:130px;
+            margin-right:25px;
+            background-color:#0D92F4;
+            border:1px solid #0D92F4;
+            border-radius:5px;
+            width:70px;
+            color:white;
+            cursor:pointer;
+
+                
+        }
+
+        .clear{
+            background-color:red;
+
+            color:white;
+            border:1px solid red;
+            border-radius:5px;
+            width:70px;
+            cursor:pointer;
+        }
+
+
+        .mingap{
+            padding-bottom:5px;
+        }
+
+        .form-control.error small {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="form" method="post" action="./Practical7.php">
+        <center><h1>Registration Form </h1></center>
+        <div class="form-control">
+        <label for="first_name" ><b>First Name </b>  </label>
+        <input type="text" name="firstname" id="first_name" size="30px" width="18px"   ><br>
+        <small></small>
+        </div>
+
+        <div class="form-control">
+        <label for="lastname" class="template1"> <b>Last Name</b>    </label>
+        <input type="text" name="lastname" id="lastname" size="30px" width="18px"  ><br>
+        <small></small>
+        </div>
+
+        
+
+    <div class="form-control">
+        <label for="gender" class="mingap" ><b>Gender</b> </label> <br>
+        <label for="male" >Male </label>
+        <input type="radio" name="gender" id="male" class="template8" value="Male">
+        <label for="male" >Female</label>
+        <input type="radio" name="gender" id="female" class="template8" value="Female"><br>
+        <small></small> 
+    </div>
+    
+
+
+    <div class="form-control">
+        <label for="roll_no" class="template2"> <b>Roll Number </b>  </label>
+        <input type="password" name="roll_no" id="roll_number" size="30px" width="18px" ><br>
+        <small></small>
+
+    </div>
+
+    <div class="form-control">
+
+        <label for="phoneno" class="template3"> <b>Phone Number </b>  </label>
+        <input type="text" name="phoneno" id="phoneno" size="30px" width="18px" ><br>
+        <small></small>
+
+    </div>
+
+
+
+        <label for="course" class="template6"> <b>Course </b>   </label>
+        <input type="text" name="course" id="course" value="B.Voc. Software Development " size="30px" width="18px" ><br>
+
+
+    </div>
+
+    
+
+        <input type="submit" name="submit" value="Submit" class="submit">
+        <input type="reset" name="reset" value="Reset" class="clear">
+        
+
+        
+    </form>
+    <br>
+    <br>
+    
+    <h2 style="margin-left: 40vw; width: 100%;">Get Student Data </h2>
+    <form action="./Practical7I(II).php">
+        <label for="roll_no">Enter Roll Number : </label>
+        <input type="text" name="roll_no" id="roll_no">
+        <br>
+        <input type="submit" value="Get Data">
+    </form>
+
+    
+</body>
+</html>
