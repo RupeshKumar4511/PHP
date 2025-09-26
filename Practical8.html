@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        } 
+        .container form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Todos </h2> 
+        <form action="./Practical8.php">
+            <label for="Todo Title">Todo Title : </label>
+            <input type="text" name="title" placeholder="Enter your todo title" >
+            <br>
+            <br>
+            <label for="Todo Description">Todo Description : </label>
+            <input type="text" name="description" placeholder="Enter your todo description">
+            <br>
+            <br>
+            <input type="submit" name="Add_Todo" value="Add_Todo">
+            <h3>Delete Todos by entering only todo title.</h3>
+            <input type="submit"  name="Delete_Todo" value="Delete_Todo"> 
+            
+            <br>
+            <input type="submit" name="Display_Todos" value="Display_Todos">
+
+        </form>
+    </div>
+
+    
+</body>
+</html>
