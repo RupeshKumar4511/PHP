@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn1">Sum of two no </button>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+
+            function sum(){
+                let a = parseInt(prompt("enter first number"))
+                let b = parseInt(prompt("enter second number"))
+
+                alert(`sum of two no is : ${a+b}`)
+            }
+
+
+            $('#btn1').on('click',()=>{   
+                sum();
+            })
+            
+        })
+    </script>
+</body>
+</html>

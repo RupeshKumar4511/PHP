@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn1">Selecting Element Using id </button>
+    <br>
+    <br>
+    
+    <button class="btn2">Selecting Element Using Class</button>
+    <br>
+    <p name="btn3">Selecting Element Using name</p>
+    <button attr-style="btn4">Selecting Element Using Attribute Name</button>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#btn1').on('click',()=>{
+                alert('Selecting Element Using id')
+            });
+            $('.btn2').on('click',()=>{
+                alert('Selecting Element Using class')
+            })
+            $('p').on('click',()=>{
+                alert('Selecting Element Using name')
+            })
+            $('[attr-style]').on('click',()=>{
+                alert('Selecting Element Using Attribute name')
+            })
+            
+        })
+    </script>
+</body>
+</html>
