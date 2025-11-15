@@ -21,10 +21,8 @@
     echo "<br>";
     echo "Captalize first letter of each word in a string : ";
     echo "<br>";
-    $string_word = explode(" ",$replaced_string);
-    foreach($string_word as $i){
-        echo strtoupper(substr($i,0,1)).substr($i,1)." ";
-    }
+    $string_word = ucwords($replaced_string);
+    echo $string_word;
     ?>
 </body>
 </html>

@@ -14,7 +14,7 @@
         $rev = $rem + $rev*10;
         $Number = round($Number/10); 
     }
-    echo $rev;  
+    echo "Reverse of 123 is : $rev" ;  
     ?>
 </body>
 </html>

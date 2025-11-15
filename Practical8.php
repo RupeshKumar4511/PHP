@@ -103,7 +103,7 @@ if(isset($_GET['Display_Todos']) && $_GET['Display_Todos']=='Display_Todos'){
             echo json_encode(["message" => $result->fetch_assoc()]);
     } else {
         http_response_code(400);
-        echo json_encode(["error" => "Failed to display todo."]);
+        echo json_encode(["msg" => "No todo to display."]);
         exit();
         }
 
